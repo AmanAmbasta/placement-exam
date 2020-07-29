@@ -7,7 +7,7 @@ class CreateTestForm extends Component {
         this.state = {
             fullName: "",
             email: "",
-            mobile: 0,
+            mobile: "",
             securityQuestion: "",
             answer: "",
             redirect: false
@@ -26,23 +26,20 @@ class CreateTestForm extends Component {
         const { fullName, answer, email, mobile, securityQuestion } = this.state
         const data = { fullName, answer, email, mobile, securityQuestion };
         console.log(data);
+        this.setState({ redirect: true });
         newUser(data)
             .then(test => {
                 localStorage.setItem("test_id", test.test_id);
-                this.setState({ redirect: true });
             })
     }
     handleClear(e) {
-        // localStorage.setItem("test_id", "test.test_id");
-        // this.setState({ redirect: true });
-        // console.log("Clear Click");
         e.preventDefault();
         this.setState({
-            fullName: " ",
-            email: " ",
-            mobile: " ",
+            fullName: "",
+            email: "",
+            mobile: "",
             securityQuestion: "",
-            answer: " "
+            answer: "",
         })
     }
     render() {
@@ -164,7 +161,7 @@ class CreateTestForm extends Component {
                                             onChange={this.handleChange}
                                         >
 
-                                            <option defaultValue>question</option>
+                                            <option defaultValue>Select</option>
                                             <option value="0">What is you zodiac name?</option>
                                             <option value="1">What is you last name?</option>
                                             <option value="2">What is you pet name?</option>

@@ -79,14 +79,14 @@ class Instructions extends Component {
                                         checked={this.state.Agree === 'agree'}
                                         onChange={this.handleChange}
                                     />
-                                    <label for="male" className="ml-3">I have read and agree to the terms and conditions</label><br />
+                                    <label htmlFor="male" className="ml-3">I have read and agree to the terms and conditions</label><br />
                                     <input type="radio" id="female"
                                         name="Agree"
                                         value="diagree"
                                         checked={this.state.Agree === 'disagree'}
                                         onChange={this.handleChange}
                                     />
-                                    <label for="female" className="ml-3">I do not agreed to the terms and conditions. I understand that I
+                                    <label htmlFor="female" className="ml-3">I do not agreed to the terms and conditions. I understand that I
                         will not be able to take the test.</label><br />
                                 </div>
                                 <div className="text-center py-8">

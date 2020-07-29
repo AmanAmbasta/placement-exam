@@ -1,11 +1,12 @@
 import { GET_APTI_QUES, GET_LOGI_QUES, GET_QUANT_QUES, GET_ESSAY_QUES, GET_AUTO_QUES } from '../actions/types';
 
 const initalState = {
-    questions: [],
+    questions: []
 }
 export default function (state = initalState, action) {
     switch (action.type) {
         case GET_APTI_QUES:
+            console.log(action.payload);
             return {
                 ...state,
                 questions: action.payload

@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+
 import Timer from '../timer/Clock'
-import { questions } from "./Question";
+// import { questions } from "./Question";
+
+import { getAptiQues } from "../../actions/getQuesAction";
+
 class McqTest extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             questionNumber: 0,
             resp: [],
@@ -13,15 +18,20 @@ class McqTest extends Component {
         this.nextQuestion = this.nextQuestion.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
+    componentWillMount() {
+        this.props.getAptiQues();
+        console.log(this.props.questions)
+    }
+
     nextQuestion() {
         let { questionNumber, RedirectTO } = this.state;
-        if (questions.length - 1 == questionNumber) {
+        if (this.props.questions.length - 1 === questionNumber) {
             this.setState({ RedirectTO: true });
         }
         else {
             this.setState({ questionNumber: questionNumber + 1 });
-            console.log("new State");
-            console.log(this.state.resp);
+            // console.log("new State");
+            // console.log(this.state.resp);
 
         }
     }
@@ -33,7 +43,7 @@ class McqTest extends Component {
     }
     render() {
         const options = <ul onChange={this.handleChange}>
-            {questions[this.state.questionNumber].option.map(option => {
+            {this.props.questions[this.state.questionNumber].options.map(option => {
                 return (<li key={option}>
                     <input type="radio" id={option} name={this.state.questionNumber} value={option} />
                     <label htmlFor={option} className="ml-3"> {option} </label>
@@ -51,7 +61,7 @@ class McqTest extends Component {
                             </div>
                             <div className="flex-1 text-right">
                                 <b> <i className="fa fa-clock-o mx-2" aria-hidden="true"></i>
-                                    <Timer redirectTo='/essay' min='1' />
+                                    <Timer redirectTo='/essay' min='30' />
                                 </b>
                             </div>
                         </div>
@@ -72,7 +82,7 @@ class McqTest extends Component {
                             </div>
                         </div>
                         <p className="py-4 mx-8">
-                            {questions[this.state.questionNumber].question}
+                            {this.props.questions[this.state.questionNumber].question}
                         </p>
                         <div className="mx-8 py-2 mb-16">
                             {options}
@@ -91,4 +101,7 @@ class McqTest extends Component {
         );
     }
 }
-export default McqTest;
+const mapStataToProps = state => ({
+    questions: state.getQues.questions
+})
+export default connect(mapStataToProps, { getAptiQues })(McqTest);

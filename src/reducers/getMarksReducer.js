@@ -1,4 +1,4 @@
-import { GET_APTI_MARKS, GET_LOGI_MARKS, GET_QUANT_MARKS, GET_ESSAY_MARKS, GET_AUTO_MARKS } from '../actions/types';
+import { GET_APTI_MARKS, GET_LOGI_MARKS, GET_QUANT_MARKS, GET_ESSAY_MARKS, GET_AUTO_MARKS } from "../actions/types";
 
 const initalState = {
     marks: {}

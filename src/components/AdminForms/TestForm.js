@@ -129,7 +129,7 @@ class TestFrom extends Component {
                                                     <div class="w-full px-3">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="question">
+                                                            htmlFor="question">
                                                             Question
                                             </label>
                                                         <input
@@ -141,7 +141,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option1">
+                                                            htmlFor="grid-option1">
                                                             Option 1
                                             </label>
                                                         <input
@@ -151,7 +151,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option2">
+                                                            htmlFor="grid-option2">
                                                             Option 2
                                             </label>
                                                         <input
@@ -163,7 +163,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option3">
+                                                            htmlFor="grid-option3">
                                                             Option 3
                                             </label>
                                                         <input
@@ -174,7 +174,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option4">
+                                                            htmlFor="grid-option4">
                                                             Option 4
                                             </label>
                                                         <input
@@ -204,7 +204,7 @@ class TestFrom extends Component {
                                                     <div class="w-full px-3">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="question">
+                                                            htmlFor="question">
                                                             Question
                                             </label>
                                                         <input
@@ -216,7 +216,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option1">
+                                                            htmlFor="grid-option1">
                                                             Option 1
                                             </label>
                                                         <input
@@ -226,7 +226,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option2">
+                                                            htmlFor="grid-option2">
                                                             Option 2
                                             </label>
                                                         <input
@@ -238,7 +238,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option3">
+                                                            htmlFor="grid-option3">
                                                             Option 3
                                             </label>
                                                         <input
@@ -249,7 +249,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option4">
+                                                            htmlFor="grid-option4">
                                                             Option 4
                                             </label>
                                                         <input
@@ -279,7 +279,7 @@ class TestFrom extends Component {
                                                     <div class="w-full px-3">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="question">
+                                                            htmlFor="question">
                                                             Question
                                                         </label>
                                                         <input
@@ -291,7 +291,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option1">
+                                                            htmlFor="grid-option1">
                                                             Option 1
                                                         </label>
                                                         <input
@@ -301,7 +301,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option2">
+                                                            htmlFor="grid-option2">
                                                             Option 2
                                                         </label>
                                                         <input
@@ -313,7 +313,7 @@ class TestFrom extends Component {
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option3">
+                                                            htmlFor="grid-option3">
                                                             Option 3
                                             </label>
                                                         <input
@@ -323,7 +323,7 @@ class TestFrom extends Component {
 
                                                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="grid-option4">
+                                                            htmlFor="grid-option4">
                                                             Option 4
                                                             </label>
                                                         <input
@@ -353,7 +353,7 @@ class TestFrom extends Component {
                                                     <div class="w-full px-3">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="question">
+                                                            htmlFor="question">
                                                             Question
                                             </label>
                                                         <input
@@ -365,7 +365,7 @@ class TestFrom extends Component {
                                                     <div class="w-full px-3">
                                                         <label
                                                             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                                            for="question">
+                                                            htmlFor="question">
                                                             Word Limit
                                             </label>
                                                         <input
